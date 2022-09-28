@@ -17,18 +17,25 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="overview">
         <h1>Hamburg</h1>
         <ul>
           <li>Monday 13:00</li>
           <li>Raining</li>
+        </div>
         </ul>
         <div class="row">
           <div class="col-6">
-            <img
-              src="https://openweathermap.org/img/wn/10d@2x.png"
-              alt="raining"
-            />
-            12°C |°F
+            <div class="d-flex weather-temperature">
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="raining"
+                class="float-left"
+              />
+              <div class="float-left">
+                <strong>12</strong><span class="units">°C | <a href="#">°F</a> </span> 
+            </div>
+            </div>
           </div>
           <div class="col-6">
             <ul>
@@ -40,10 +47,11 @@
         </div>
       </div>
       <small>
-          <a
+        <a
           href="https://github.com/elty-annie/vanilla-weather-app"
           target="_blank"
-          >Open-source code</a>
+          >Open-source code</a
+        >
         by Eltina Ngwarai
       </small>
     </div>
